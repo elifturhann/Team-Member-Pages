@@ -1,0 +1,137 @@
+body{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+
+    .main_container{
+        background-color: #F0F1F2;
+        // background-color: black;
+        // color: white;
+        width: 100vw;
+        height: min-content;
+        padding: 1rem;
+        
+        .switch-part{
+            padding: 0.5rem 0 1rem 3rem;
+            margin-bottom: 1rem;
+            margin-bottom: 3rem;
+        } 
+
+        .head_container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 0 5%;
+            padding: 0 15%;
+    
+            .head-left{
+                width:50% ;
+            }
+    
+            .head-right{
+                width: 50%;
+            }
+        }
+
+        .cards_container{
+            margin: 0 5%;
+            padding: 5rem;
+            padding-left: 7rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
+            // background-color: aqua;
+            
+            
+            
+            .card-item{
+                background-color: inherit;
+                border: none;
+                position: relative;
+                
+                span{
+                    position: absolute;
+                    left:10rem;
+                    transform: rotate(90deg) translate(2rem, -3.5rem);
+                    font-size: x-small;}
+                .beruf3{
+                    transform: rotate(90deg) translate(1.5rem, -4.3rem);}
+                .beruf4{
+                    transform: rotate(90deg) translate(1.5rem, -4rem);}
+                .beruf5{
+                    transform: rotate(90deg) translate(1.5rem, -4rem);}
+                .beruf6{
+                    transform: rotate(90deg) translate(1.5rem, -4rem);}
+        
+                
+                img{
+                    width: 15rem;
+                    box-shadow: 1px 1px 10px 3px #a8a4a4;} 
+                
+            }
+
+            .card-item-bottom{
+                margin-top: 3rem;}    
+        }    
+
+    }
+    
+}
+
+@media screen and (max-width: 1200px) {
+    
+    body{
+        .main_container{
+
+            .head_container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                margin: 0 5%;
+                padding: 0 15%;
+        
+                .head-left{
+                    width:100% ;
+                }
+        
+                .head-right{
+                    margin-top: 2rem;
+                    width: 100%;
+                }
+            }
+
+
+            .cards_container{
+                display: grid;
+                grid-template-columns:  1fr 1fr;
+            }
+        }
+    }
+  
+}
+
+@media screen and (max-width: 850px) {
+    
+    body{
+        .main_container{
+            .cards_container{
+                display: grid;
+                grid-template-columns:  1fr ;
+            }
+        }
+    }
+  
+}
+
+//for Javascript
+
+body{
+    .dark_mode{
+        background-color: black;
+        color: white;
+
+    }
+}
